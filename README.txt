@@ -7,7 +7,7 @@ Eclipse projects.
 	* ``LightSensorTest’’ is a simple tool to quickly gauge the
 	  sampling refresh rate of a device’s light sensor.
 	* ``capture-wifi’’ provides a quick and dirty script to capture movie
-	  light data in batch, e.g. in conjunction with e.g. LightDump.
+	  light data in batch, e.g. in conjunction with LightDump.
 	  If you want to copy this script somewhere, copy the entire
 	  directory as a unit, otherwise it won’t work.
 
