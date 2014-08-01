@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@android:drawable/ic_media_play"
+        android:text="@string/startBtn" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_below="@+id/buttonStart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:gravity="left|center_vertical"
+        android:drawableLeft="@android:drawable/ic_media_pause" 
+        android:text="@string/stopBtn" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonStop" />
+
+    <FrameLayout
+        android:id="@+id/preview"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/exposureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/preview"
+        android:layout_alignParentLeft="true"
+        android:text="@string/exposureValue" />
+
+    <TextView
+        android:id="@+id/virtualLightRaw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/exposureValue"
+        android:layout_alignParentLeft="true"
+        android:text="@string/virtualLightRaw" />
+
+    <TextView
+        android:id="@+id/virtualLightNorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/virtualLightRaw"
+        android:layout_alignParentLeft="true"
+        android:text="@string/virtualLightNorm" />
+    
+    <TextView
+        android:id="@+id/virtualLightFiltered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/virtualLightNorm"
+        android:layout_alignParentLeft="true"
+        android:text="@string/virtualLightFiltered" />
+    
+    <TextView
+        android:id="@+id/virtualLightNormContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/virtualLightNorm"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/virtualLightNorm" />
+
+    <TextView
+        android:id="@+id/virtualLightRawContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/virtualLightRaw"
+        android:layout_alignLeft="@+id/virtualLightNormContent" />
+    
+    <TextView
+        android:id="@+id/virtualLightFilteredContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/virtualLightFiltered"
+        android:layout_alignLeft="@+id/virtualLightNormContent" />
+    <TextView
+        android:id="@+id/exposureValueContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/exposureValue"
+        android:layout_alignLeft="@+id/virtualLightNormContent" />
+
+    <TextView
+        android:id="@+id/lightUtility"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/virtualLightNorm"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:shadowColor="#FFFFFF"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="6"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    
+</RelativeLayout>

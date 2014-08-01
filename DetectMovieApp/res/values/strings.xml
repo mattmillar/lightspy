@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Movie Detector</string>
+    <string name="startBtn">Start Recording</string>
+    <string name="stopBtn">Stop Recording</string>
+    <string name="virtualLightFiltered">Filtered virtual light: </string>
+    <string name="virtualLightNorm">Normalized virtual light: </string>
+    <string name="virtualLightRaw">Raw virtual light: </string>
+    <string name="exposureValue">Exposure: </string>
+    <string name="DEFAULTPERIOD">50</string>
+    <string name="DEFAULTNUMSAMPLES">25</string>
+    <string name="DEFAULTREFRESHPERIOD">5</string>
+    <string name="action_settings">ActionSettings</string>
+
+</resources>

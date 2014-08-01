@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:id="@+id/update_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update status..." />
+    
+    <TextView
+        android:id="@+id/value_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value status..." />
+    
+    <TextView
+        android:id="@+id/accuracy_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accuracy..." />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+    >
+        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:text="Frequency is " />
+	    
+	    
+	    <TextView
+	        android:id="@+id/frequency_desc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="18sp"
+	        android:textColor="#ff0000"
+	        android:text="--" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:text=" Hz\n" />
+	    
+    </LinearLayout>
+    
+     <Button
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="Check Frequency"
+     android:onClick="checkFreq" />
+     
+     <TextView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="@string/instructions" />
+
+</LinearLayout>

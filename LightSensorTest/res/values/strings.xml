@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LightSensorTest</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="instructions">\n\nThis app measures the sampling frequency of the light sensor.\n\nInstructions: Wait about 10 seconds (or longer if you wish) to collect some samples, then press Check Frequency to calculate the average frequency at which the samples arrived.  You may repeat this process if you wish.  Each time you press the button, the count is reset.</string>
+
+</resources>
